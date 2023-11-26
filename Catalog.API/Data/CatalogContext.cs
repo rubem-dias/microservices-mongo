@@ -1,8 +1,8 @@
 using MongoDB.Driver;
 using MongoDB.Driver.Core.Configuration;
-using WebApplication1.Entities;
+using Catalog.API.Entities;
 
-namespace WebApplication1.Data;
+namespace Catalog.API.Data;
 
 public class CatalogContext : ICatalogContext
 {

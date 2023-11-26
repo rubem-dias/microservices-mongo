@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/rubem/dev/Microsservices/Catalog.API/Catalog.API.csproj": {}
+    "/home/rubem/dev/microservices-mongo/Catalog.API/Catalog.API.csproj": {}
   },
   "projects": {
-    "/home/rubem/dev/Microsservices/Catalog.API/Catalog.API.csproj": {
+    "/home/rubem/dev/microservices-mongo/Catalog.API/Catalog.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rubem/dev/Microsservices/Catalog.API/Catalog.API.csproj",
+        "projectUniqueName": "/home/rubem/dev/microservices-mongo/Catalog.API/Catalog.API.csproj",
         "projectName": "Catalog.API",
-        "projectPath": "/home/rubem/dev/Microsservices/Catalog.API/Catalog.API.csproj",
+        "projectPath": "/home/rubem/dev/microservices-mongo/Catalog.API/Catalog.API.csproj",
         "packagesPath": "/home/rubem/.nuget/packages/",
-        "outputPath": "/home/rubem/dev/Microsservices/Catalog.API/obj/",
+        "outputPath": "/home/rubem/dev/microservices-mongo/Catalog.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/rubem/.nuget/NuGet/NuGet.Config"
@@ -41,6 +41,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             },
             "MongoDB.Driver": {
               "target": "Package",

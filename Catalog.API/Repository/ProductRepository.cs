@@ -1,8 +1,8 @@
 using MongoDB.Driver;
-using WebApplication1.Data;
-using WebApplication1.Entities;
+using Catalog.API.Data;
+using Catalog.API.Entities;
 
-namespace WebApplication1.Repository;
+namespace Catalog.API.Repository;
 
 public class ProductRepository : IProductRepository
 {
@@ -23,9 +23,17 @@ public class ProductRepository : IProductRepository
         return await _context.Products.Find(p => p.Id == id).FirstOrDefaultAsync();
     }
 
-    public async Task CreateProduct(Product product)
+    public async Task<Product> CreateProduct(Product product)
     {
-        await _context.Products.InsertOneAsync(product);
+        try
+        {
+            await _context.Products.InsertOneAsync(product);
+            return product;
+        }
+        catch (Exception exception)
+        {
+            throw new Exception($"Product has failed to add: {product.Name}");
+        }
     }
 
     public async Task<bool> UpdateProduct(Product product)

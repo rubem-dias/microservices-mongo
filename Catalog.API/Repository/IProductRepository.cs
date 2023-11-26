@@ -1,12 +1,12 @@
-using WebApplication1.Entities;
+using Catalog.API.Entities;
 
-namespace WebApplication1.Repository;
+namespace Catalog.API.Repository;
 
 public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetProducts();
     Task<Product> GetProduct(string id);
-    Task CreateProduct(Product product);
+    Task<Product> CreateProduct(Product product);
     Task<bool> UpdateProduct(Product product);
     Task<bool> DeleteProduct(string productId);
 }
